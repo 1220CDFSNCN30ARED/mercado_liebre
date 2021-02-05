@@ -31,6 +31,10 @@ app.get('/register', (req,res)=>{
     res.sendFile(__dirname + '/views/register.html');
 });
 
+app.get('/rama-dani', (req,res)=>{
+    res.sendFile(__dirname + '/views/login.html');
+});
+
 app.post('/register',(req,res)=>{
     res.send(req.body);
 });
